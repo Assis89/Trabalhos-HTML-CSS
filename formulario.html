@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+   <style>
+      header{
+    background-color: rgba(23, 63, 157, 0.464);
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+footer{
+    background-color: rgba(23, 63, 157, 0.464);
+    color: whitesmoke;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+.container{
+    width: 90%;
+    max-width: 750px;
+    margin: 20px auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+fieldset{
+    border: 1px solid #ddd;
+    padding: 0 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(18, 18, 234, 0.5);
+}
+table{
+    width: 100%;
+    border-collapse:collapse;
+}
+td{
+    width: 50%;
+    vertical-align: top;
+    padding: 0 15px;
+}
+label{
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+input[type="website"],
+textarea,
+
+select{
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+}
+button[type="submit"]{
+    background-color: rgb(52, 156, 52);
+}
+
+button[type="submit"]:hover{
+    background-color: rgb(122, 168, 122);
+}
+
+
+
+
+   </style>
+  </head>
+  <body>
+    <header>
+      <h2>Deixe um Comentário</h2>
+    </header>
+    <main>
+      <div>
+        <form class="container">
+          <fieldset>
+            <table>
+              <tr>
+                <td>
+                  <label for="nome">Nome</label>
+                  <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite o nome"
+                  />
+
+                  <!-- campo email-->
+                  <label for="nome">E-mail</label>
+                  <input type="email" id="email" name="email" required />
+                  <!-- wwbsite-->
+                  <label for="website">Website</label>
+                  <input type="text" id="website" name="website" />
+                  <label for="comentario">Comentário</label>
+                  <textarea id="comentario" name="comentario" rows="5" cols="40" required></textarea><br><br>
+                  Observação: Seu comentário será publicado após passar pelo moderador. <br>
+
+                <button type="submit">Enviar Comentário</button>
+              </tr>
+            </table>
+
+            
+          </fieldset>
+        </form>
+      </div>
+    </main>
+    <footer>&copy; Todos os direitos reservados</footer>
+  </body>
+</html>
